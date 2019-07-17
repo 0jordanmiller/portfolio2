@@ -1,0 +1,8 @@
+.sidebar {
+  background-image: linear-gradient(to bottom, #0b1e39, 40%, #449bbb);
+  width: 33%;
+  height: -webkit-fill-available;
+}
+.main-menu {
+  color: #47a1c3;
+}

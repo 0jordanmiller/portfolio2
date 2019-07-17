@@ -4,7 +4,7 @@ import "./style.css";
 
 function Sidebar() {
   return (
-    <div className="App">
+    <div className="sidebar">
       <h2>jordan miller</h2>
       <div>
         <Button className="main-menu" href="/projects" text="projects" />
