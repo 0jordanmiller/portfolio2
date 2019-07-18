@@ -2,7 +2,12 @@
   background-image: linear-gradient(to bottom, #0b1e39, 40%, #449bbb);
   width: 33%;
   height: -webkit-fill-available;
+  float: left;
 }
 .main-menu {
   color: #47a1c3;
+}
+
+.name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
