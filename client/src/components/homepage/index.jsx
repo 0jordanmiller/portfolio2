@@ -5,9 +5,9 @@ import "./style.css";
 
 function Homepage() {
   return (
-    <div className="whole-app">
-      <Sidebar className="whole-app" />
-      <Panel className="whole-app" />
+    <div>
+      <Sidebar />
+      <Panel />
     </div>
   );
 }

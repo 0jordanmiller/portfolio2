@@ -3,6 +3,8 @@
   width: 33%;
   height: -webkit-fill-available;
   float: left;
+  height: 100vh;
+  text-align: center;
 }
 .main-menu {
   color: #47a1c3;

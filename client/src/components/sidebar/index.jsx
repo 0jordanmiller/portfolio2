@@ -1,21 +1,26 @@
 import React from "react";
 import Button from "../button";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./style.css";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <h2 className="name">jordan miller</h2>
-      <div>
-        <img src="https://via.placeholder.com/350x150" />
-        <Button className="main-menu" href="/projects" text="projects" />
-        <Button className="main-menu" href="/resume" text="resume" />
-        <Button className="main-menu" href="/contact" text="contact" />
+      <div className="main-bar">
+        <img alt="profile" src="https://via.placeholder.com/350x150" />
+        <ul>
+          <li><Link className="main-menu" to='/'>Home</Link></li>
+          <li><Link className="main-menu" to='/projects'>Projects</Link></li>
+          <li><Link className="main-menu" to='/resume'>Resume</Link></li>
+        </ul>
       </div>
-      <div>
-        <Button className="social-media" href="/github" text="github" />
-        <Button className="social-media" href="/linkedin" text="linkedin" />`
-        <Button className="social-media" href="/contact" text="contact" />
+      <div className="sm-bar">
+        <ul>
+          <li><Link className="social-media" to='/'>Home</Link></li>
+          <li><Link className="social-media" to='/projects'>Projects</Link></li>
+          <li><Link className="social-media" to='/resume'>Resume</Link></li>
+          </ul>
       </div>
     </div>
   );
