@@ -6,3 +6,15 @@
   justify-content: center;
   text-align: center;
 }
+
+.text {
+  margin-bottom: 246px;
+  padding: 23%;
+  text-align: left;
+}
+
+.fullstack {
+  font-size: 8em;
+  line-height: 0.5em;
+  letter-spacing: 0.18em;
+}

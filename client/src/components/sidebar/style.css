@@ -5,12 +5,30 @@
   float: left;
   height: 100vh;
   text-align: center;
+  justify-content: center;
 }
+
 .main-menu {
   color: #47a1c3;
+  line-height: 1.9em;
+  font-size: 3em;
+}
+
+.picture-name {
+  padding-top: 20%;
+}
+
+ul {
+  padding-left: 0px;
 }
 
 .name {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
