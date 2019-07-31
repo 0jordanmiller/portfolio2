@@ -1,54 +1,52 @@
-import React from "react";
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import React, { Component } from "react";
+import { BrowserRouter as Router, NavLink, Route,  } from "react-router-dom";
+import HomepagePanel from '../homepagePanel';
+import ProjectPanel from '../projectPanel';
 import "./style.css";
 
-function Sidebar() {
-  return (
-    <div className="sidebar">
+class Sidebar extends Component {
+  render() {
+    return (
       <Router>
-        <h2 className="name">jordan miller</h2>
-        <div className="main-bar">
-          <img alt="profile" src="https://via.placeholder.com/350x150" />
-          <ul>
-            <li>
-              <NavLink className="main-menu" to="/">
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="main-menu" to="/projects">
-                Projects
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="main-menu" to="/resume">
-                Resume
-              </NavLink>
-            </li>
-          </ul>
+        <div className="sidebar">
+          <h2 className="name">jordan miller</h2>
+          <div className="main-bar">
+            <img alt="profile" src="https://via.placeholder.com/350x150" />
+            <ul>
+              <li>
+                <NavLink className="main-menu" to="/">
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="main-menu" to="/projects">
+                  Projects
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="main-menu" to="/resume">
+                  Resume
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+          <div className="sm-bar">
+            <ul>
+              <li>
+                <a className="social-media" href="https://github.com/0jordanmiller">GitHub</a>
+              </li>
+              <li>
+                <a className="social-media" href="https://www.linkedin.com/in/jordankenmiller/">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="sm-bar">
-          <ul>
-            <li>
-              <NavLink className="social-media" to="/">
-                Github
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="social-media" to="/projects">
-                NavLinkedIn
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="social-media" to="/resume">
-                Resume
-              </NavLink>
-            </li>
-          </ul>
-        </div>
+        <Route path='/' exact component={HomepagePanel}/>
+        <Route path='/projects' exact component={ProjectPanel}/>
+        
       </Router>
-    </div>
-  );
+    );
+  }
 }
 
-export default Sidebar;
+export default Sidebar
