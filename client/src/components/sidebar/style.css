@@ -5,30 +5,48 @@
   float: left;
   height: 100vh;
   text-align: center;
-  justify-content: center;
 }
 
 .main-menu {
-  color: #47a1c3;
+  color: white;
   line-height: 1.9em;
-  font-size: 3em;
+  font-size: 2.5em;
+  font-weight: 100;
+}
+
+.social-media {
+  color: white;
+  line-height: 1em;
+  font-size: 1.5em;
+  font-weight: 100;
+  text-decoration: underline;
+}
+
+#sm-bar li {
+  display: inline-block;
+  width: 30%;
 }
 
 .picture-name {
   padding-top: 20%;
 }
 
-ul {
-  padding-left: 0px;
-}
-
 .name {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #47a1c3;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  font-weight: 100;
 }
 
 li {
   list-style-type: none;
 }
+
 a {
   text-decoration: none;
+}
+
+ul {
+  margin-top: 76px;
+  padding-left: 0px;
 }

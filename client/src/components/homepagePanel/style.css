@@ -2,19 +2,25 @@
   background-color: #0b1e39;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: center; */
 }
 
 .text {
-  margin-bottom: 246px;
-  padding: 23%;
+  padding: 10%;
+  margin-bottom: 10%;
+  margin-left: 9%;
   text-align: left;
 }
 
 .fullstack {
-  font-size: 8em;
+  color: #449bbb;
+  font-size: 9em;
   line-height: 0.5em;
   letter-spacing: 0.18em;
+  font-weight: 100;
+}
+.summary {
+  color: white;
 }

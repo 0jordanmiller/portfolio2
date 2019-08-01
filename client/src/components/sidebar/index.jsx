@@ -11,35 +11,40 @@ class Sidebar extends Component {
         <div className="sidebar">
           <div className="contents">
             <div className="picture-name">
-              <img alt="profile" src="https://via.placeholder.com/350x150" />
+              <img alt="profile" src="https://via.placeholder.com/150" />
               <h2 className="name">jordan miller</h2>
             </div>
 
             <ul>
               <li>
                 <NavLink className="main-menu" to="/">
-                  Home
+                  home
                 </NavLink>
               </li>
               <li>
                 <NavLink className="main-menu" to="/projects">
-                  Projects
+                  projects
                 </NavLink>
               </li>
               <li>
                 <NavLink className="main-menu" to="/resume">
-                  Resume
+                  resume
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className="main-menu" to="/contact">
+                  contact
                 </NavLink>
               </li>
             </ul>
-            <div className="sm-bar">
-              <ul>
+            <div>
+              <ul id="sm-bar">
                 <li>
                   <a
                     className="social-media"
                     href="https://github.com/0jordanmiller"
                   >
-                    GitHub
+                    github
                   </a>
                 </li>
                 <li>
@@ -47,7 +52,7 @@ class Sidebar extends Component {
                     className="social-media"
                     href="https://www.linkedin.com/in/jordankenmiller/"
                   >
-                    LinkedIn
+                    linkedin
                   </a>
                 </li>
               </ul>
