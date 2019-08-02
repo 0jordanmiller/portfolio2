@@ -15,7 +15,7 @@ class Sidebar extends Component {
               <h2 className="name">jordan miller</h2>
             </div>
 
-            <ul>
+            <ul id="ul-main-menu">
               <li>
                 <NavLink className="main-menu" to="/">
                   home
